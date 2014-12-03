@@ -1,0 +1,65 @@
+<html>
+<script>
+//var addzButton = document.querySelector("#addz");
+// var equalButton = document.querySelector("#calculate");
+// addzButton.addEventListener("click", function(){
+//   add(num1, num2);
+//   return (num1 + num2);
+//   equalButton.addEventListener("click", function(){
+//     console.log(num1, num2);
+//   })
+// });
+
+// var addzButton = document.querySelector("#addz");
+// var equalButton = document.querySelector("#calculate");
+// addzButton.addEventListener("click", function (){
+//   var add = (num1 + num2);
+//   equalButton.addEventListener("click", function(){
+//     console.log(add(num1, num2));
+//   })
+// });
+
+var textbox1 = document.querySelector("input#num1")
+var textbox2 = document.querySelector("input#num2")
+var addzButton = document.querySelector("#addz")
+addzButton.addEventListener("click", function (){
+  textbox1 = parseInt(textbox1);
+  textbox2 = parseInt(textbox2);
+  return textbox1 + textbox2;
+});
+
+
+
+</script>
+<body>
+  <textarea input type ="num1" id = "num1"></textarea>
+  <button id="addz">+</button>
+  <!-- <button id="minus">-</button>
+  <button id="multiply">*</button>
+  <button id="divide">%</button> -->
+  <textarea input type ="num2" id = "num2"></textarea>
+  <p>=</p>
+  <textarea input type ="num3" id = "num3"></textarea>
+
+<!--  <textarea name="Name" rows="8" cols="40"></textarea>
+
+var button = document.querySelector("#button");
+var box = document.querySelector("input#checkbox");
+button.addEventListener("click", function(){
+box.addEventListener("click")
+if (box.checked){
+window.alert("It's checked!");
+}
+else {
+window.alert("Not checked!");
+}
+});
+</script>
+<body>
+<p><input type ="checkbox" id = "checkbox">something random here</p>
+<button id="button">do something</button>
+
+-->
+
+</body>
+</html>
