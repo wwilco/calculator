@@ -1,12 +1,23 @@
 <html>
+<body>
+  <textarea id = "num1"></textarea>
+  <button id="add">+</button>
+  <button id="subtract">-</button>
+  <button id="multiply">x</button>
+  <button id="divide">%</button>
+  <textarea id = "num2"></textarea>
+  <p>=</p>
+  <textarea id = "num3"></textarea>
+</body>
+
 <script>
-var textbox1 = document.querySelector("textarea#num1")
-var textbox2 = document.querySelector("textarea#num2")
-var addButt = document.querySelector("button#add");
-var subButt = document.querySelector("button#subtract");
+var textbox1 = document.querySelector("#num1")
+var textbox2 = document.querySelector("#num2")
+var addButt = document.querySelector("#add");
+var subButt = document.querySelector("#subtract");
 var multButt = document.querySelector("#multiply");
 var divButt = document.querySelector("#divide");
-var answer = document.querySelector("textarea#num3")
+var answer = document.querySelector("#num3")
 
 function add(){
   var sum = parseInt(textbox1.value) + parseInt(textbox2.value);
@@ -38,14 +49,5 @@ multButt.addEventListener("click", multiply);
 divButt.addEventListener("click", divide);
 
 </script>
-<body>
-  <textarea id = "num1"></textarea>
-  <button id="add">+</button>
-  <button id="subtract">-</button>
-  <button id="multiply">x</button>
-  <button id="divide">%</button>
-  <textarea id = "num2"></textarea>
-  <p>=</p>
-  <textarea id = "num3"></textarea>
-</body>
+
 </html>
